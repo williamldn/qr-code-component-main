@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);   
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--light-gray);
+    }
+    
+    .card {
+      width: 250px;
+      background-color: var(--white);
+      padding: 1rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      /*box-shadow: 0 0 1px var(--light-gray);*/
+    }
+    
+    .card-image {
+      width: 100%;
+      border-radius: .5rem;
+    }
+    
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      text-align: center;
+      color: var(--dark-blue);
+      margin-top: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+    
+    .card-text {
+      font-size: 15px;
+      font-weight: 400;
+      text-align: center;
+      color: var(--grayish-blue);
+      margin-top: 0;
+    }
+    
+    .lateral-margin {
+      margin-right: .5rem;
+      margin-left: .5rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="card">
+      <img class="card-image" src="./images/image-qr-code.png" alt="card image" />
+      <h1 class="card-title lateral-margin">Improve your front-end skills by building projects</h1>
+      <p class="card-text lateral-margin">Scan QR code to visit Frontend Mentor and take your code skills to the bext level</p>
+    </section>
+  </div>
+</body>
+</html>
